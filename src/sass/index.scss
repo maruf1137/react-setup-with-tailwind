@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// @import "./navbar.scss";
+
+body {
+  font-family: "Neurial Grotesk";
+}
+
+.mobile-menu-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.companies {
+  .wrapper {
+    .overlay,
+    .overlay {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      max-width: 316px;
+      z-index: 2;
+    }
+    .right-overlay {
+      right: 0;
+      background-image: linear-gradient(
+        to right,
+        rgba(239, 238, 230, 0),
+        rgb(239, 238, 230)
+      );
+    }
+    .left-overlay {
+      left: 0;
+      background-image: linear-gradient(
+        to right,
+        rgb(239, 238, 230),
+        rgba(239, 238, 230, 0)
+      );
+    }
+  }
+}
